@@ -4,12 +4,12 @@ import java.util.Iterator;
 public class Vertice<T>{
     private int id;
     private ArrayList<Arco<T>> adyacencias;
-    private String color;
+    private char color;
 
     public Vertice(int id){
         this.id = id;
         this.adyacencias = new ArrayList<>();
-        this.color = "blanco";
+        this.color = 'b';
     }
 
     public ArrayList<Arco<T>> getAdyacentes(){
@@ -21,12 +21,11 @@ public class Vertice<T>{
             adyacencias.add(arco);
     }
 
-    public void setColor(String color){
-        if(color != null)
-            this.color = color;
+    public void setColor(char color){
+        this.color = color;
     }
 
-    public String getColor(){
+    public char getColor(){
         return color;
     }
 

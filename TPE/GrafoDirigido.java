@@ -134,4 +134,9 @@ public class GrafoDirigido<T> implements Grafo{
         }
         return Collections.emptyIterator();
     }
+
+
+    public HashMap<Integer, Vertice<T>> getVertices() {
+        return vertices;
+    }
 }
